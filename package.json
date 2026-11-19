@@ -1,8 +1,15 @@
 {
+  "name": "villa-casaggiori",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "servor --reload"
+    "dev": "vite --host 0.0.0.0",
+    "start": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
   },
-  "dependencies": {
-    "servor": "^4.0.2"
+  "devDependencies": {
+    "vite": "^6.4.1"
   }
 }
