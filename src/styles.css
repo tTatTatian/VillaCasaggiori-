@@ -13,6 +13,9 @@
 .farm-intro{max-width:790px;margin:0 auto 42px;text-align:center}
 .farm-intro p{color:#74786f;font-size:14px;line-height:1.9}
 .farm-productions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.farm-feature-photo{margin:0 auto 38px;max-width:900px}
+.farm-feature-photo img{display:block;width:100%;max-height:520px;object-fit:cover;object-position:center 58%}
+.farm-feature-photo figcaption{padding-top:10px;color:#899081;font-size:11px;letter-spacing:.4px;text-align:right}
 .farm-card{min-height:210px;padding:28px 26px;background:#f0f0e9;border-top:2px solid #9aa58f}
 .farm-number{font-size:10px;letter-spacing:2px;color:#899681}
 .farm-card h3{margin:20px 0 12px;font:26px/1.15 var(--serif);font-weight:400;color:var(--forest)}
@@ -23,6 +26,8 @@
  .farm-heading h2{font-size:clamp(36px,10vw,52px)}
  .farm-heading .lead{font-size:19px}
  .farm-intro{text-align:left;margin-bottom:28px}
+ .farm-feature-photo{margin-bottom:28px}
+ .farm-feature-photo img{max-height:340px}
  .farm-productions{grid-template-columns:1fr;gap:12px}
  .farm-card{min-height:0;padding:23px 22px}
  .farm-card h3{margin:13px 0 9px;font-size:24px}
