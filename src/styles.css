@@ -148,23 +148,11 @@
     radial-gradient(ellipse at 88% 0%,rgba(55,16,66,.24) 0%,transparent 42%),
     linear-gradient(112deg,#062523 0%,#020d0e 48%,#030407 100%);
 }
+.footer{
+  border-top:2px solid #fff;
+}
 .footer::before{
-  content:"";
-  position:absolute;
-  z-index:2;
-  top:0;
-  left:0;
-  right:0;
-  height:10px;
-  background:#fff;
-  pointer-events:none;
-  clip-path:polygon(
-    0 30%, 3% 12%, 7% 18%, 11% 43%, 15% 62%,
-    19% 55%, 23% 34%, 27% 30%, 31% 47%, 36% 70%,
-    41% 77%, 46% 57%, 51% 45%, 56% 53%, 61% 69%,
-    66% 62%, 71% 40%, 76% 31%, 81% 45%, 86% 63%,
-    91% 58%, 95% 35%, 100% 25%, 100% 100%, 0 100%
-  );
+  content:none;
 }
 .footer>*{
   position:relative;
