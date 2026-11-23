@@ -78,3 +78,7 @@
     min-width:0;
   }
 }
+
+
+/* La foto del forno è riservata alla versione desktop. */
+@media (max-width:700px){.desktop-only-oven{display:none!important}}
