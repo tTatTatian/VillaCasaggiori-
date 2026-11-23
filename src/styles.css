@@ -64,3 +64,17 @@
 
 /* Bilingual flag selector in the header. */
 .language-switch{display:flex;align-items:center;gap:9px;margin-left:auto;margin-right:18px;flex:0 0 auto}.language-switch a{display:inline-flex;align-items:center;justify-content:center;width:27px;height:27px;font-family:Arial,sans-serif;font-size:21px;line-height:1;border-radius:50%;transition:transform .18s}.language-switch a:hover{transform:scale(1.12)}.panorama-language{position:absolute;z-index:3;top:max(18px,env(safe-area-inset-top));right:18px;margin:0;padding:7px 10px;background:#f4f1e9ed;border-radius:2px}@media(max-width:700px){.language-switch{gap:7px;margin-right:12px}.language-switch a{width:25px;height:25px;font-size:20px}.panorama-language{top:max(14px,env(safe-area-inset-top));right:14px}}
+
+
+/* Desktop: align the family-story section like the Bed & Breakfast teaser.
+   The markup has two children (copy + photo), so use two balanced columns. */
+@media (min-width:701px){
+  .intro-grid{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:70px;
+  }
+  .intro-copy,
+  .intro-photo{
+    min-width:0;
+  }
+}
