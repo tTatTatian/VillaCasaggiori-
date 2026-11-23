@@ -90,3 +90,47 @@
   .weddings-photos figure:nth-child(3){grid-column:1;grid-row:2}
   .weddings-photos figure:nth-child(4){grid-column:2;grid-row:1}
 }
+
+
+/* Section 05: dark bronze and gold cinematic background, inspired by the supplied reference. */
+.visit{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background-color:#171a18;
+  background-image:
+    radial-gradient(ellipse at 14% 22%,rgba(132,91,43,.27) 0,transparent 39%),
+    radial-gradient(ellipse at 82% 68%,rgba(174,123,54,.19) 0,transparent 43%),
+    radial-gradient(ellipse at 54% 4%,rgba(95,75,46,.22) 0,transparent 35%),
+    linear-gradient(128deg,#171a19 0%,#25231e 48%,#151918 100%);
+}
+.visit::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:.72;
+  background-image:
+    radial-gradient(1.4px 1.4px at 7% 16%,rgba(255,225,164,.88) 50%,transparent 100%),
+    radial-gradient(1px 1px at 16% 71%,rgba(227,177,100,.72) 50%,transparent 100%),
+    radial-gradient(2px 2px at 24% 38%,rgba(255,218,151,.66) 50%,transparent 100%),
+    radial-gradient(1px 1px at 31% 83%,rgba(220,169,92,.7) 50%,transparent 100%),
+    radial-gradient(1.5px 1.5px at 39% 19%,rgba(255,229,177,.76) 50%,transparent 100%),
+    radial-gradient(1px 1px at 47% 61%,rgba(223,174,103,.7) 50%,transparent 100%),
+    radial-gradient(2px 2px at 55% 31%,rgba(255,219,150,.7) 50%,transparent 100%),
+    radial-gradient(1px 1px at 63% 88%,rgba(229,182,112,.72) 50%,transparent 100%),
+    radial-gradient(1.5px 1.5px at 72% 14%,rgba(255,227,169,.8) 50%,transparent 100%),
+    radial-gradient(1px 1px at 79% 49%,rgba(224,171,93,.74) 50%,transparent 100%),
+    radial-gradient(2px 2px at 88% 77%,rgba(255,221,155,.68) 50%,transparent 100%),
+    radial-gradient(1px 1px at 94% 27%,rgba(224,176,103,.72) 50%,transparent 100%);
+}
+.visit::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:radial-gradient(ellipse at center,transparent 34%,rgba(5,8,7,.34) 100%);
+}
+.visit>.wrap{position:relative;z-index:1}
