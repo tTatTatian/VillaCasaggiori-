@@ -82,3 +82,11 @@
 
 /* La foto del forno è riservata alla versione desktop. */
 @media (max-width:700px){.desktop-only-oven{display:none!important}}
+
+/* Desktop: invert the two right-hand wedding gallery photos only. */
+@media (min-width:701px){
+  .weddings-photos figure:nth-child(1){grid-column:1;grid-row:1}
+  .weddings-photos figure:nth-child(2){grid-column:2;grid-row:2}
+  .weddings-photos figure:nth-child(3){grid-column:1;grid-row:2}
+  .weddings-photos figure:nth-child(4){grid-column:2;grid-row:1}
+}
